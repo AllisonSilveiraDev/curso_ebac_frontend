@@ -38,12 +38,22 @@ input {
 
 p {
   font-family: "Oswald", sans-serif;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
+  color: #fff;
 
   height: 50px;
   width: 400px;
   display: none;
   align-items: center;
   justify-content: center;
+  border-radius: 10px;
+}
+
+.sucess {
+  background-color: green;
+}
+
+.error {
+  background-color: red;
 }
