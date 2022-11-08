@@ -1,118 +1,71 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: "roboto", sans-serif;
+  background-color: #f2f2f2;
 }
 
-body > header {
-  background-color: #2f3640;
-  padding: 16px 0;
-  color: #f5f6fa;
+div {
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
 }
 
-header .container {
+h1 {
+  font-size: 40px;
+  font-style: italic;
+  font-weight: bold;
+  margin: 30px;
+}
+
+form {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 
-header li {
-  display: inline;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  margin-left: 16px;
-}
-
-header li a {
-  color: #f5f6fa;
-  text-decoration: none;
-}
-
-.container {
-  width: 1366px;
-  margin: 0 auto 0 auto;
-}
-
-.articles {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.articles article img {
-  //height: 180px;
-  width: 100%;
-}
-
-.articles article {
-  width: 30%;
-}
-
-section {
-  padding: 16px 0;
-}
-
-section h2,
-.articles article {
-  margin-bottom: 16px;
-}
-
-.articles article h3 {
-  margin-top: 8px;
-  margin-bottom: 8px;
+input {
+  width: 400px;
+  height: 50px;
   font-size: 24px;
+  padding: 10px;
+  background-color: #fff;
+  margin-right: 10px;
+  border-radius: 4px;
 }
 
-.articles article a {
-  background-color: blue;
+button {
+  width: 120px;
+  height: 100%;
+  background-color: #000;
   color: #fff;
-  padding: 8px;
-  display: inline-block;
-  text-decoration: none;
-  font-weight: bold;
-  margin-top: 8px;
-}
-.articles article a:hover {
-  text-decoration: underline;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
 }
 
-.articles article p,
-.articles article a {
-  font-family: Arial, Helvetica, sans-serif;
+button:hover {
+  background-color: #494c4e;
 }
 
-section h2 {
-  font-size: 32px;
+li {
+  color: green;
+  font-size: 20px;
+  cursor: pointer;
 }
 
-#sports {
-  background-color: rgba(0, 255, 0, 0.1);
+.linha {
+  text-decoration: line-through;
 }
 
-#sports .articles article a {
-  background-color: #009432;
-}
-
-#economy {
-  background-color: #f8f59f;
-}
-
-#economy .articles article a {
-  background-color: #ff9f1a;
-}
-
-#tech {
-  background-color: #33edeb;
-}
-
-#tech .articles article a {
-  background-color: #3382ed;
-}
-
-#entertainment {
-  background-color: #f29995;
-}
-
-#entertainment .articles article a {
-  background-color: #952a25;
+.style {
+  color: red;
+  cursor: pointer;
+  text-decoration: line-through;
 }
