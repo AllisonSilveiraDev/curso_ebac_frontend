@@ -7,13 +7,12 @@ $("form").on("submit", function (e) {
 
 function adicionaTarefa() {
   const novaTarefa = $("input").val();
-
   $(`<li >${novaTarefa}</li>`).appendTo("ul");
   $("input").val("");
 }
 
 function adicionaEstilo() {
-  $("li").click(function () {
-    $(this).addClass("style");
+  $("ul").on("click", "li", function () {
+    $(this).toggleClass("style");
   });
 }
