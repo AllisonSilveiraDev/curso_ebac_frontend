@@ -1,28 +1,18 @@
-@fontePrincipal: Roboto, sans-serif;
-@fontedoTitulo: Lobster, cursive;
-@corDoTexto: #fff;
-@corDeFundo: #eb3b5a;
-@corDoBotao: #ffbe19;
-@corTextBotao: #000;
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
-  background-color: @corDeFundo;
-  font-family: @fontePrincipal;
-  color: @corDoTexto;
+  background-color: #eb3b5a;
+  font-family: Roboto, sans-serif;
+  color: #fff;
 }
-
 h1 {
-  font-family: @fontedoTitulo;
+  font-family: Lobster, cursive;
   font-size: 3em;
   margin: 45px 0 30px 0;
 }
-
 main {
   max-width: 960px;
   width: 100%;
@@ -30,7 +20,6 @@ main {
   font-size: 1.5em;
   text-align: center;
 }
-
 button {
   padding: 16px;
   cursor: pointer;
@@ -38,15 +27,14 @@ button {
   font-size: 1em;
   margin: 50px;
   border-radius: 8px;
-  background-color: @corDoBotao;
-  color: @corTextBotao;
-  font-family: @fontePrincipal;
-  &:hover {
-    background-color: #c38c15;
-    color: #fff;
-  }
+  background-color: #ffbe19;
+  color: #000;
+  font-family: Roboto, sans-serif;
 }
-
+button:hover {
+  background-color: #c38c15;
+  color: #fff;
+}
 input {
   display: block;
   margin: 16px auto 0;
@@ -58,15 +46,14 @@ input {
   color: #fff;
   border-bottom: 6px solid #fff;
 }
-
 .resultado {
   padding: 16px;
   border: 8px dotted #fff;
   display: none;
-  span {
-    overflow: hidden;
-    font-weight: bold;
-    font-size: 3em;
-    display: block;
-  }
+}
+.resultado span {
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 3em;
+  display: block;
 }
